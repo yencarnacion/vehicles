@@ -8,6 +8,7 @@
                  [org.postgresql/postgresql "9.4-1202-jdbc42"]
                  [clojure.jdbc/clojure.jdbc-c3p0 "0.3.2"]
                  [ring "1.4.0"]
-                 [org.clojure/data.json "0.2.6"]]
+                 [org.clojure/data.json "0.2.6"]
+                 [compojure "1.4.0"]]
   :profiles {:dev {:plugins [[cider/cider-nrepl "0.10.0-SNAPSHOT"]]}}
   :main vehicles.core)

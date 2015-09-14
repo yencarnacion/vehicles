@@ -9,7 +9,8 @@ The app expects a database to be up ... See https://github.com/yencarnacion/zipW
 ----
  $ lein run 
 ----
-The above opens up a ring app on localhost port 3000
+The above opens up a compojure app on localhost port 3000
+To see results point your browser to http://localhost:3000/api/vehicles
 
 === License
 
