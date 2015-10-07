@@ -9,11 +9,11 @@
             [ring.util.response :as resp]
             ))
 
-(def vehicles (db/query pool ["SELECT * FROM vehicles LIMIT 10"]))
+(defn vehicles [] (db/query pool ["SELECT * FROM vehicles LIMIT 10"]))
 
 (defroutes app-routes
   (GET "/" [] (resp/content-type (resp/resource-response "index.html" {:root "public"}) "text/html"))
-  (GET "/api/vehicles" [] (resp/content-type (resp/response vehicles) "application/json; charset=utf-8"))
+  (GET "/api/vehicles" [] (resp/content-type (resp/response (vehicles)) "application/json; charset=utf-8"))
   (route/not-found "<h1>Page not found</h1>"))
 
 (def app

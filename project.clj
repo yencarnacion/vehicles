@@ -12,6 +12,7 @@
                  [ring/ring-json "0.4.0"]
                  [org.clojure/data.json "0.2.6"]
                  [compojure "1.4.0"]]
-  :profiles {:dev {:plugins [[cider/cider-nrepl "0.10.0-SNAPSHOT"]]}}
+  :profiles {:dev {:plugins [[cider/cider-nrepl "0.10.0-SNAPSHOT"]]}
+            }
   :main vehicles.core
   :aot [vehicles.core])
